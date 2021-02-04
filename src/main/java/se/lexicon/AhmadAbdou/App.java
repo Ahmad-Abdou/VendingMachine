@@ -46,7 +46,7 @@ public class App {
                 String answer = sc.nextLine();
                 String answer2 = sc.nextLine();
 
-                if (answer.equalsIgnoreCase("yes") || answer2.equalsIgnoreCase("yes")) {
+                if (answer.equalsIgnoreCase("yes") || answer2.equalsIgnoreCase("y")) {
 
                     change = money - price;
                     int newChange = change;
@@ -62,7 +62,7 @@ public class App {
                     System.out.println("Your change: " + newChange);
                     System.out.println("Do you want to buy another product? type yes to proceed , No to exit!");
                     String input = sc.nextLine();
-                    if (input.equalsIgnoreCase("yes")) {
+                    if (input.equalsIgnoreCase("yes")||input.equalsIgnoreCase("y")) {
                         System.out.println("Your balance now is : " + vending.returnChange());
                         continue;
                     } else {
